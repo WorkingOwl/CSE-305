@@ -7,12 +7,12 @@ public class RegisteredUser {
     public void addUser(User user) {
         userMap.put(user.getUserID(), user);
     }
-    public boolean removeUser(User user) {
-        if (userMap.get(user.getUserID()) == null) {
-            return false;
+    public boolean removeUser(String userID) {
+        if (userMap.get(userID) == null) {
+           return false;
         } else {
-            userMap.remove(user.getUserID(), user);
-            return true;
+          userMap.remove(userID);
+          return true;
         }
     }
 }
