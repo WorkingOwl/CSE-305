@@ -4,6 +4,12 @@ public class User {
     private String email;
     private UserType userType;
 
+    public static enum UserType {
+        TENANT,
+        MANAGER,
+        OWNER
+    }
+
     public User(String userID, String password, String email, UserType userType) {
         this.userID = userID;
         this.password = password;
@@ -12,7 +18,7 @@ public class User {
     }
 
     public User createUser(String userID, String password, String email, UserType userType) {
-        return new User(userID,password, email, userType); 
+        return new User(userID, password, email, userType);
     }
 
     public void resetPassword(String newPassword) {
@@ -51,5 +57,4 @@ public class User {
         this.userType = userType;
     }
 
-    
 }
