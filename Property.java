@@ -9,4 +9,28 @@ public class Property {
         this.propertyOwnerID = propertyOwnerID;
     }
 
+    public String getPropertyID() {
+        return propertyID;
+    }
+
+    public void setPropertyID(String propertyID) {
+        this.propertyID = propertyID;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getPropertyOwnerID() {
+        return propertyOwnerID;
+    }
+
+    public void setPropertyOwnerID(String propertyOwnerID) {
+        this.propertyOwnerID = propertyOwnerID;
+    }
+    
 }
