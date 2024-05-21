@@ -8,7 +8,6 @@ public class ShortTermContract implements Contract {
     public void BuildContractID(String contractID) {
         this.contractID = contractID;
     }
-
     @Override
     public void BuildPropertyID(String propertyID) {
         this.propertyID = propertyID;
@@ -25,8 +24,8 @@ public class ShortTermContract implements Contract {
     }
 
     @Override
-    public Contract SignContract() {
-        return this;
+    public RentalContract SignContract() {
+        return new RentalContract(contractID, propertyID, tenantID, rentAmount);
     }
 
 }

@@ -7,5 +7,5 @@ public interface Contract {
 
     public void BuildRentAmount(double amount);
 
-    public Contract SignContract();
+    public RentalContract SignContract();
 }

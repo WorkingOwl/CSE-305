@@ -25,8 +25,8 @@ public class LongTermContract implements Contract {
     }
 
     @Override
-    public Contract SignContract() {
-        return this;
+    public RentalContract SignContract() {
+        return new RentalContract(contractID, propertyID, tenantID, rentAmount);
     }
 
 }
